@@ -6,6 +6,9 @@ function App() {
   return (
    <>
     <BrandExample />
+   <div className="main-div">
+
+   </div>
    </>
   );
 }

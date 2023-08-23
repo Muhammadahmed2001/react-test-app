@@ -1,3 +1,4 @@
+import { Button } from "bootstrap";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import './navbar.css';
@@ -6,15 +7,20 @@ import './navbar.css';
 function BrandExample() {
   return (
     <>
-      <Navbar className="navbar">
-        <h2>hello World</h2>
-        <div className="NavItem">
-        <a >home</a>
-        <a>about</a>
-        <a>skills</a>
-        <button className="contact-btn"><a>Contact</a></button>
-        </div>
-      </Navbar>
+  <nav className="navbar">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="#">
+      <span>{"<"}</span>
+      <span> Muhammad Ahmed </span>
+      <span>{"/>"}</span>
+    </a>
+    <div>
+    <button className="btn nav-btn ">Skill</button>
+    <button className="btn nav-btn">Contact</button>
+    <button className="btn nav-btn">Porfolio</button>
+    </div>
+  </div>
+</nav>
     </>
   );
 }

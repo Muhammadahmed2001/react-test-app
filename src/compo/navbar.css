@@ -1,15 +1,29 @@
 .navbar {
-    background-color: black;
-    color: antiquewhite !important;
-    box-shadow: rgba(250, 235, 215, 0.226) 0px 20px 25px, rgba(250, 235, 215, 0.185) 0px -12px 15px, rgba(250, 235, 215, 0.432) 0px 2px 3px, rgba(250, 235, 215, 0.39) 0px 6px 7px, rgba(250, 235, 215, 0.329) 0px -3px 2px;
+  background-color: black;
+  color: antiquewhite !important;
+  box-shadow: rgba(250, 235, 215, 0.226) 0px 20px 25px,
+    rgba(250, 235, 215, 0.185) 0px -12px 15px,
+    rgba(250, 235, 215, 0.432) 0px 2px 3px,
+    rgba(250, 235, 215, 0.39) 0px 6px 7px,
+    rgba(250, 235, 215, 0.329) 0px -3px 2px;
+}
+.navbar-brand {
+  margin-left: 2px;
+
 }
 
-.navbar-brand {
-    color: antiquewhite !important;
+.navbar-brand > span {
+  color: #00a99d !important;
+  font-family: cursive !important;
+  font-size: 25px;
 }
 
 .nav-btn {
-    color: antiquewhite !important;
-    background-color: rgb(80, 79, 64) !important;
-    margin: 5px ;
+  color: antiquewhite !important;
+  background-color: rgb(80, 79, 64) !important;
+  margin: 5px;
+}
+.nav-btn-div {
+  display: flex;
+  flex-wrap: wrap;
 }

@@ -1,3 +1,23 @@
-*{
+* {
   background-color: black;
+  color: antiquewhite !important;
+}
+.developer-img {
+  width: 50%;
+  
+}
+.detail-div {
+  width: 430px;
+  margin-top: 80px;
+}
+.first-div {
+  flex-wrap: wrap;
+}
+@media (max-width: 515px) {
+  .developer-img {
+    width: 100%;
+  }
+}
+.myName{
+  color: #00a99d !important;
 }

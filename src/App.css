@@ -4,7 +4,6 @@
 }
 .developer-img {
   width: 50%;
-  
 }
 .detail-div {
   width: 430px;
@@ -18,6 +17,10 @@
     width: 100%;
   }
 }
-.myName{
+.myName {
+  color: #00a99d !important;
+}
+.div-heading {
+  text-align: center;
   color: #00a99d !important;
 }

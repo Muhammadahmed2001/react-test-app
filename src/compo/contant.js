@@ -12,17 +12,46 @@ const DetailDiv = () => (
   </>
 );
 
-const SkillDiv = ()=>(
-  <div
-  className="progress"
-  role="progressbar"
-  aria-label="Basic example"
-  aria-valuenow={25}
-  aria-valuemin={0}
-  aria-valuemax={100}
->
-  <div className="progress-bar" style={{ width: "25%" }} />
-</div>
-)
+const SkillDiv = () => (
+  <div class="container">
+    <div class="progress2 progress-moved-html">
+      <label>
+        <h6>HTML and CSS and are capable of creating responsive</h6>
+      </label>
+      <div class="progress-bar2-html"></div>
+    </div>
 
-export { DetailDiv ,SkillDiv };
+    <div class="progress2 progress-moved-boot">
+      <label>
+        <h6>Bootstrap, a popular CSS framework</h6>
+      </label>
+      <div class="progress-bar2-boot"></div>
+    </div>
+
+    <div class="progress2 progress-moved-java">
+      <label>
+        <h6>JavaScript, a powerful programming language</h6>
+      </label>
+      <div class="progress-bar2-java"></div>
+    </div>
+
+    <div class="progress2 progress-moved-firebase">
+      <label>
+        <h6>
+          Firebase database is one of the most important parts that usually all
+          the dynamic apps needed to store the data
+        </h6>
+      </label>
+      <div class="progress-bar2-firebase"></div>
+    </div>
+
+    <div class="progress2 progress-moved-react">
+      <label>
+        <h6>ReactJS is an open-source JavaScript library</h6>
+      </label>
+      <div class="progress-bar2-react"></div>
+    </div>
+  </div>
+);
+
+export { DetailDiv, SkillDiv };

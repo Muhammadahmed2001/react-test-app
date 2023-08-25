@@ -9,8 +9,8 @@ function App() {
     <>
       <MainNavbar />
       <div className="main-div container">
-        <div>
-          <h3 className="div-heading">About Me</h3>
+        <div> 
+          <h2 className="div-heading">About Me</h2>
         </div>
         <div className="d-flex first-div">
           <div className="detail-div">
@@ -19,7 +19,7 @@ function App() {
           <img className="developer-img" src={Developer_gif} alt="" />
         </div>
         <div>
-          <h3 className="div-heading">Skill</h3>
+          <h2 className="div-heading">Skill</h2>
         </div>
         <div className="secound-div">
           <div>

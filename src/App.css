@@ -12,9 +12,13 @@
 .first-div {
   flex-wrap: wrap;
 }
-@media (max-width: 515px) {
+@media (max-width: 990px) {
   .developer-img {
     width: 100%;
+  }
+  .detail-div {
+    width: 100%;
+    margin-top: 80px;
   }
 }
 .myName {
@@ -26,4 +30,32 @@
   margin-top: 40px;
 }
 
+.cv-img {
+  width: 100%;
+}
 
+.third-div {
+  display: flex;
+}
+.cv-btn-div {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  align-items: center;
+  width: 50%;
+}
+.cv-img-div {
+  width: 50%;
+}
+
+@media (max-width: 990px) {
+  .cv-img-div {
+    width: 100%;
+  }
+  .third-div {
+    flex-wrap: wrap;
+  }
+  .cv-btn-div{
+    width: 100%;
+  }
+}

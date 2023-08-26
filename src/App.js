@@ -1,15 +1,16 @@
 import logo from "./logo.svg";
 import "./App.css";
 import MainNavbar from "./compo/navbar";
-import { DetailDiv, SkillDiv } from "./compo/contant";
+import { DetailDiv, SkillDiv, CvButton } from "./compo/contant";
 import Developer_gif from "./assits/developer-gif.gif";
+import Cv from "./assits/Online resume-bro.png";
 
 function App() {
   return (
     <>
       <MainNavbar />
       <div className="main-div container">
-        <div> 
+        <div>
           <h2 className="div-heading">About Me</h2>
         </div>
         <div className="d-flex first-div">
@@ -24,6 +25,17 @@ function App() {
         <div className="secound-div">
           <div>
             <SkillDiv />
+          </div>
+        </div>
+        <div>
+          <h2 className="div-heading">Resume</h2>
+        </div>
+        <div className="third-div">
+          <div className="cv-img-div">
+            <img className="cv-img" src={Cv} alt=""></img>
+          </div>
+          <div className="cv-btn-div">
+            <CvButton />
           </div>
         </div>
       </div>

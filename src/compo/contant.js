@@ -54,4 +54,17 @@ const SkillDiv = () => (
   </div>
 );
 
-export { DetailDiv, SkillDiv };
+const CvButton = () => (
+  <div className="button">
+    <div className="box"></div>
+    <div className="box">R</div>
+    <div className="box">E</div>
+    <div className="box">S</div>
+    <div className="box">U</div>
+    <div className="box">M</div>
+    <div className="box">E</div>
+    <div className="box"></div>
+  </div>
+);
+
+export { DetailDiv, SkillDiv, CvButton };

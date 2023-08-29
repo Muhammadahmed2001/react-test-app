@@ -59,3 +59,15 @@
     width: 100%;
   }
 }
+
+
+
+
+.project-card{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  
+}

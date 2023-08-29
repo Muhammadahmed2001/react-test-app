@@ -1,4 +1,7 @@
 import "./contant.css";
+import Weather from "../assits/Capture-weather.PNG";
+import Quiz from "../assits/quiz.PNG";
+import SearchApp from "../assits/search.png";
 
 const DetailDiv = () => (
   <>
@@ -67,4 +70,60 @@ const CvButton = () => (
   </div>
 );
 
-export { DetailDiv, SkillDiv, CvButton };
+const ProjectCardWeather = () => (
+  <div className="card" style={{ width: "18rem" }}>
+    <img src={Weather} className="card-img-top" alt="..." />
+    <div className="card-body">
+      <h4 className="card-title">Weather App</h4>
+      <a href="#" className="btn">
+        Go somewhere
+      </a>
+    </div>
+  </div>
+);
+
+const ProjectCardQuiz = () => (
+  <div className="card" style={{ width: "18rem" }}>
+    <img src={Quiz} className="card-img-top" alt="..." />
+    <div className="card-body">
+      <h4 className="card-title">Quiz App</h4>
+      <a href="#" className="btn">
+        Go somewhere
+      </a>
+    </div>
+  </div>
+);
+
+const ProjectCardSearchApp = () => (
+  <div className="card" style={{ width: "18rem" }}>
+    <img src={SearchApp} className="card-img-top" alt="..." />
+    <div className="card-body">
+      <h5 className="card-title">Search App Using Objects</h5>
+      <a href="#" className="btn">
+        Go somewhere
+      </a>
+    </div>
+  </div>
+);
+
+const ProjectCardZakat = () => (
+  <div className="card" style={{ width: "18rem" }}>
+    <img src={SearchApp} className="card-img-top" alt="..." />
+    <div className="card-body">
+      <h5 className="card-title">Search App Using Objects</h5>
+      <a href="#" className="btn">
+        Go somewhere
+      </a>
+    </div>
+  </div>
+);
+
+export {
+  DetailDiv,
+  SkillDiv,
+  CvButton,
+  ProjectCardWeather,
+  ProjectCardQuiz,
+  ProjectCardSearchApp,
+  ProjectCardZakat,
+};

@@ -3,6 +3,7 @@ import Weather from "../assits/Capture-weather.PNG";
 import Quiz from "../assits/quiz.PNG";
 import SearchApp from "../assits/search.png";
 
+
 const DetailDiv = () => (
   <>
     <h2>
@@ -106,18 +107,6 @@ const ProjectCardSearchApp = () => (
   </div>
 );
 
-const ProjectCardZakat = () => (
-  <div className="card" style={{ width: "18rem" }}>
-    <img src={SearchApp} className="card-img-top" alt="..." />
-    <div className="card-body">
-      <h5 className="card-title">Search App Using Objects</h5>
-      <a href="#" className="btn">
-        Go somewhere
-      </a>
-    </div>
-  </div>
-);
-
 export {
   DetailDiv,
   SkillDiv,
@@ -125,5 +114,5 @@ export {
   ProjectCardWeather,
   ProjectCardQuiz,
   ProjectCardSearchApp,
-  ProjectCardZakat,
+  
 };

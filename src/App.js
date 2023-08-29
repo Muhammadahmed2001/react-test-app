@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import MainNavbar from "./compo/navbar";
-import { DetailDiv, SkillDiv, CvButton, ProjectCardWeather , ProjectCardQuiz ,ProjectCardSearchApp, ProjectCardZakat } from "./compo/contant";
+import { DetailDiv, SkillDiv, CvButton, ProjectCardWeather , ProjectCardQuiz ,ProjectCardSearchApp, } from "./compo/contant";
 import Developer_gif from "./assits/developer-gif.gif";
 import Cv from "./assits/Online resume-bro.png";
 
@@ -46,7 +46,7 @@ function App() {
             <ProjectCardWeather />
             <ProjectCardQuiz />
             <ProjectCardSearchApp />
-            <ProjectCardZakat />
+            
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 .main-loader {
    height: 100vh;
-   width: 110%;
+   width: 100%;
    background-color: black;
    position: fixed;
    bottom: 0;
@@ -15,8 +15,8 @@
   }
   
   .loader {
-    width: 18em;
-    height: 18em;
+    width: 23em;
+    height: 23em;
   }
   
   .loader__eye1,

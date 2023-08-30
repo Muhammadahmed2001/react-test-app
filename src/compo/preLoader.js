@@ -5,8 +5,7 @@ const Loader = () => {
     <div className="main-loader">
       <div>
         <svg
-          height="108px"
-          width="108px"
+   
           viewBox="0 0 128 128"
           className="loader"
         >

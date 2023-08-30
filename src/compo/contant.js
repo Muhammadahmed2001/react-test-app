@@ -1,14 +1,14 @@
 import "./contant.css";
+import { useEffect, useState } from "react";
 import Weather from "../assits/Capture-weather.PNG";
 import Quiz from "../assits/quiz.PNG";
 import SearchApp from "../assits/search.png";
-
+import Animation from "./animation";
+import Loader from "./preLoader";
 
 const DetailDiv = () => (
   <>
-    <h2>
-      Hi, I'm <span className="myName">Muhammad Ahmed</span>
-    </h2>
+    <Animation />
     <p className="detail-pra">
       I was born on February 12th, 2001. I am a skilled web developer with a
       passion for creating efficient and visually appealing websites.
@@ -107,6 +107,20 @@ const ProjectCardSearchApp = () => (
   </div>
 );
 
+const Loading = () => {
+  const [preLoading, setPreLoading] = useState(true);
+  useEffect(() => {
+    const fakeDataFatch = () => {
+      setTimeout(() => {
+        setPreLoading(false);
+      }, 3000);
+    };
+
+    fakeDataFatch();
+  }, []);
+  return preLoading ? <Loader /> : ("");
+};
+
 export {
   DetailDiv,
   SkillDiv,
@@ -114,5 +128,5 @@ export {
   ProjectCardWeather,
   ProjectCardQuiz,
   ProjectCardSearchApp,
-  
+  Loading,
 };

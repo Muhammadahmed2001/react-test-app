@@ -1,13 +1,24 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { useEffect, useState } from "react";
 import MainNavbar from "./compo/navbar";
-import { DetailDiv, SkillDiv, CvButton, ProjectCardWeather , ProjectCardQuiz ,ProjectCardSearchApp, } from "./compo/contant";
+import {
+  DetailDiv,
+  SkillDiv,
+  CvButton,
+  ProjectCardWeather,
+  ProjectCardQuiz,
+  ProjectCardSearchApp,
+  Loading,
+} from "./compo/contant";
 import Developer_gif from "./assits/developer-gif.gif";
 import Cv from "./assits/Online resume-bro.png";
+import Loader from "./compo/preLoader";
 
 function App() {
   return (
     <>
+      <Loading />
       <MainNavbar />
       <div className="main-div container">
         <div>
@@ -46,7 +57,6 @@ function App() {
             <ProjectCardWeather />
             <ProjectCardQuiz />
             <ProjectCardSearchApp />
-            
           </div>
         </div>
       </div>

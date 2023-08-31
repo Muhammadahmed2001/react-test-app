@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Weather from "../assits/Capture-weather.PNG";
 import Quiz from "../assits/quiz.PNG";
 import SearchApp from "../assits/search.png";
+import Cv from "../assits/CV.pdf";
 import Animation from "./animation";
 import Loader from "./preLoader";
 
@@ -58,8 +59,24 @@ const SkillDiv = () => (
   </div>
 );
 
-const CvButton = () => (
-  <div className="button">
+const CvButton = () => {
+  const handleDownload = () => {
+    // Replace 'example.pdf' with the path to your PDF file.
+    const pdfPath = Cv;
+
+    // Create an anchor element
+    const link = document.createElement("a");
+    link.href = pdfPath;
+
+    // Set the download attribute to specify the file name
+    link.download = "downloaded.pdf";
+
+    // Programmatically trigger a click event to start the download
+    link.click();
+  };
+  
+  return (
+    <div onClick={handleDownload}  className="button">
     <div className="box"></div>
     <div className="box">R</div>
     <div className="box">E</div>
@@ -67,10 +84,11 @@ const CvButton = () => (
     <div className="box">U</div>
     <div className="box">M</div>
     <div className="box">E</div>
-    <div className="box"></div>
+  <div className="box"></div>
   </div>
 );
 
+};
 const ProjectCardWeather = () => (
   <div className="card" style={{ width: "18rem" }}>
     <img src={Weather} className="card-img-top" alt="..." />
@@ -118,7 +136,7 @@ const Loading = () => {
 
     fakeDataFatch();
   }, []);
-  return preLoading ? <Loader /> : ("");
+  return preLoading ? <Loader /> : "";
 };
 
 export {

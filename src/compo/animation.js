@@ -3,10 +3,10 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Animation = () => {
   const [text] = useTypewriter({
-    words: ['Muhammad Ahmed', 'Web Developer', 'Full Stack Developer'],
+    words: ['Web Developer', 'Full Stack Developer','Muhammad Ahmed'],
     Loop: {},
-    typeSpeed : 120,
-    deleteSpeed : 80,
+    typeSpeed : 200,
+    deleteSpeed : 150,
   });
   return (
     <h2>

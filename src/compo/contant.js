@@ -9,6 +9,7 @@ import Loader from "./preLoader";
 
 const DetailDiv = () => (
   <>
+  
     <Animation />
     <p className="detail-pra">
       I was born on February 12th, 2001. I am a skilled web developer with a
